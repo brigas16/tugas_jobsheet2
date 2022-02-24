@@ -55,19 +55,14 @@ class MyApp extends StatelessWidget {
                   Container(
                     height: 400,
                     width: 500,
-                    color: Colors.purpleAccent,
+                    color: Colors.amberAccent,
                     child: Column(
                       children: [
                         Container(
                           margin: EdgeInsets.only(top: 1, left: 1, right: 1),
                           height: 300,
                           width: 500,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: NetworkImage(
-                                    'https://www.google.com/imgres?imgurl=https%3A%2F%2Fasset.kompas.com%2Fcrops%2FzuedycwwFDEGyJchzq0LTPLFqAc%3D%2F170x0%3A895x484%2F750x500%2Fdata%2Fphoto%2F2019%2F07%2F27%2F5d3ba98ca67ed.jpg&imgrefurl=https%3A%2F%2Fbola.kompas.com%2Fread%2F2020%2F04%2F26%2F19000068%2Fdiego-costa-ungkap-scolari-ingkar-janji-dan-nilai-amarah-brasil-salah-sasaran%3Fpage%3Dall&tbnid=mOeo1Y314mVeoM&vet=12ahUKEwiw843a_Jb2AhWy6nMBHXh-BhcQMygCegUIARC6AQ..i&docid=WU1_uTZiR4RWEM&w=750&h=500&q=costa&ved=2ahUKEwiw843a_Jb2AhWy6nMBHXh-BhcQMygCegUIARC6AQ'),
-                                fit: BoxFit.cover),
-                          ),
+                          child: Image.asset("assets/images/costa.jpg"),
                         ),
                         Container(
                           alignment: Alignment.center,
