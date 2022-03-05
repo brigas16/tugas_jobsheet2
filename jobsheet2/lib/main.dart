@@ -61,7 +61,15 @@ class MyApp extends StatelessWidget {
                       ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [Container()],
+                        children: [
+                          Container(
+                            margin: EdgeInsets.all(10),
+                            child: Text(
+                              'Transfer',
+                              style: TextStyle(fontSize: 20),
+                            ),
+                          ),
+                        ],
                       ),
                     )
                   ],
