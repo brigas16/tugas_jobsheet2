@@ -50,8 +50,20 @@ class MyApp extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const Image(
-                      image: AssetImage("assets/Costa.jpg"),
+                      image: AssetImage(
+                        "assets/Costa.jpg",
+                      ),
+                      fit: BoxFit.fitWidth,
                     ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.purple,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [Container()],
+                      ),
+                    )
                   ],
                 ),
               ),
