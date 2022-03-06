@@ -42,8 +42,8 @@ class MyApp extends StatelessWidget {
               ),
               Container(
                 decoration: BoxDecoration(
-                    border: Border.all(color: Colors.purple.shade400),
-                    color: Colors.purple),
+                    border: Border.all(color: Colors.white),
+                    color: Colors.white),
                 margin: EdgeInsets.symmetric(horizontal: 10),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -57,10 +57,11 @@ class MyApp extends StatelessWidget {
                     ),
                     Container(
                       decoration: BoxDecoration(
+                        border: Border.all(color: Colors.white),
                         color: Colors.purple,
                       ),
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Container(
                             margin: EdgeInsets.all(10),
