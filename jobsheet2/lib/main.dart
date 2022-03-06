@@ -57,25 +57,101 @@ class MyApp extends StatelessWidget {
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        border: Border.all(color: Colors.white),
-                        color: Colors.purple,
+                        color: Colors.white,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            margin: const EdgeInsets.all(10),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text('Costa Mendekat Ke Palmeiras',
+                                    style: TextStyle(
+                                        fontSize: 17,
+                                        fontWeight: FontWeight.w600)),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.all(10),
+                          child: Text(
+                            'Transfer',
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.grey),
+                        color: Colors.white,
                       ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Container(
-                            margin: EdgeInsets.all(10),
-                            child: Text(
-                              'Transfer',
-                              style: TextStyle(fontSize: 20),
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.grey),
+                            ),
+                            child: Expanded(
+                              child: Image.asset(
+                                "assets/Costa.jpg",
+                                fit: BoxFit.contain,
+                                height: 120,
+                                width: 200,
+                              ),
                             ),
                           ),
+                          Container(
+                            margin: EdgeInsets.symmetric(
+                                horizontal: 35, vertical: 0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "pique Bilang wasit untungkan",
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                                Text(
+                                  'Madrid , koeman tepok jidat',
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                              ],
+                            ),
+                          )
                         ],
                       ),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.all(10),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Barcelona Feb 13, 2021",
+                                style: TextStyle(fontSize: 20),
+                              )
+                            ],
+                          ),
+                        )
+                      ],
                     )
                   ],
                 ),
               ),
+              Container()
             ],
           ),
         ),
