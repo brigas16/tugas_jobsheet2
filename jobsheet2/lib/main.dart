@@ -151,7 +151,61 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
-              Container()
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 10, vertical: 0),
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.grey),
+                    color: Colors.white),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.grey),
+                      ),
+                      child: Expanded(
+                          child: Image.asset(
+                        "assets/Costa.jpg",
+                        fit: BoxFit.contain,
+                        height: 120,
+                        width: 200,
+                      )),
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(horizontal: 35, vertical: 0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Pique Bilang Wasit Untungkan ",
+                            style: TextStyle(fontSize: 20),
+                          ),
+                          Text(
+                            "Madrid, Koeman Tepok Jidat",
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Container(
+                      margin: EdgeInsets.all(10),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Barcelona Feb 13, 2021",
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ],
+                      ))
+                ],
+              )
             ],
           ),
         ),
